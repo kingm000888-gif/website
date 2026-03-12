@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Baby Milk Powder | 3 Months+</title>
+
+<style>
+/* A.1 PEDIA COLOR THEME */
+:root {
+    --dark-blue: #0b3c8c;
+    --accent-blue: #1e5bb8;
+    --soft-white: #fff8e1;
+    --text-gray: #1f2933;
+    --main-yellow: #f6c400;
+}
+
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: var(--soft-white);
+    color: var(--text-gray);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #f6c400, #ffdd55);
+    color: var(--dark-blue);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Badge */
+.badge {
+    background: var(--dark-blue);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: -40px auto 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Image Box */
+.product-image {
+    background: #fff3c4;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--main-yellow);
+}
+
+/* Info Section */
+.info-section {
+    margin-top: 30px;
+    border-top: 2px solid #f6c400;
+    padding-top: 20px;
+}
+
+/* Warning */
+.warning {
+    background: #fff3cd;
+    padding: 15px;
+    border-left: 5px solid var(--main-yellow);
+    font-size: 0.85rem;
+    margin: 20px 0;
+}
+
+/* Buttons */ button { background: var(--main-yellow); color:  #0b3c8c; border: none; padding: 15px 30px; border-radius: 6px; cursor: pointer; }
+
+
+
+
+/* Stars */
+.star-btn {
+    color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--main-yellow);
+    font-size: 0.8rem;
+    padding-bottom: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <span class="badge">Ages 3 Months+</span>
+    <h1>Waseem Enterprises</h1>
+    <h1>Premium Growth Formula</h1>
+    <p>Complete Nutrition in every 400g Pack</p>
+</header>
+
+<div class="container">
+
+<div class="product-grid">
+
+<div class="product-image">
+<img src="C:\Users\AliAhmed\Desktop\WECIF\Picture\ChatGPT Image Jan 16, 2026, 08_51_51 AM.png" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+</div>
+
+<div class="product-details">
+<h2>Why Choose Our Formula?</h2>
+<ul>
+<li><strong>Iron & Zinc:</strong> Supports brain and immune development.</li>
+<li><strong>400g Value Pack:</strong> Perfectly measured for freshness.</li>
+<li><strong>Easy Digestion:</strong> Formulated for babies 3 months and older.</li>
+</ul>
+
+<div class="warning">
+<strong>Important Notice:</strong> Breastfeeding is best for babies. Consult your doctor before introducing formula.
+</div>
+
+<button style="width:100%;"><strong>Contact us:</strong> +923290816107/+923138271600</button>
+</div>
+
+</div>
+
+<div class="info-section">
+<h3>Nutritional Information (per 100g)</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr><td style="padding:10px;">Energy</td><td>490 kcal</td></tr>
+<tr><td style="padding:10px;">Protein</td><td>12g</td></tr>
+<tr><td style="padding:10px;">Vitamin D</td><td>10 µg</td></tr>
+<tr><td style="padding:10px;">Calcium</td><td>450 mg</td></tr>
+</table>
+</div>
+
+<div class="warning">
+<strong>Parents Notice:</strong> May Allah keeps your child healthy and fit. If you are looking for one of the best product for you child, then you can choose any one
+or If you want to buy the Health and Fitness of you baby then you have one choice.
+</div>
+
+</div>
+
+
+
+<div class="container" style="background: white; margin-top: 20px; padding: 40px; border-radius: 15px;">
+    <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <h2 style="color: var(--main-yellow);">Customer Feedback</h2>
+
+        <!-- The Submission/Update Form -->
+        <div id="review-form" style="background: #fdfdfd; padding: 25px; border: 1px solid #eee; border-radius: 12px; margin-bottom: 40px;">
+            <h4 id="form-title">Write a Review</h4>
+            
+            <!-- Hidden field to store the index of the review being edited -->
+            <input type="hidden" id="edit-index" value="-1">
+
+            <div class="star-input" style="font-size: 2rem; color: #ddd; margin-bottom: 15px; cursor: pointer;">
+                <span onclick="setRating(1)" class="star-btn">★</span>
+                <span onclick="setRating(2)" class="star-btn">★</span>
+                <span onclick="setRating(3)" class="star-btn">★</span>
+                <span onclick="setRating(4)" class="star-btn">★</span>
+                <span onclick="setRating(5)" class="star-btn">★</span>
+            </div>
+
+            <input type="text" id="rev-name" placeholder="Your Name" style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 6px;">
+            <textarea id="rev-text" placeholder="Share your experience..." rows="4" style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit;"></textarea>
+            
+            <button id="submit-btn" onclick="submitReview()" style="background: var(--main-yellow); color: white; border: none; padding: 12px 30px; border-radius: 6px; cursor: pointer; width: 100%; font-weight: bold;">
+                Post Review
+            </button>
+            <button id="cancel-btn" onclick="resetForm()" style="display:none; background: #999; color: white; border: none; padding: 8px; border-radius: 6px; cursor: pointer; width: 100%; margin-top: 5px;">
+                Cancel Edit
+            </button>
+        </div>
+
+        <div id="display-reviews"></div>
+    </div>
+</div>
+
+<script>
+    let currentRating = 0;
+
+    function setRating(num) {
+        currentRating = num;
+        const stars = document.querySelectorAll('.star-btn');
+        stars.forEach((s, i) => s.style.color = (i < num) ? "#ffc107" : "#ddd");
+    }
+
+    // UPDATE SECTION: Loads data back into the form
+    function editReview(index) {
+        let reviews = JSON.parse(localStorage.getItem('milkReviews')) || [];
+        const review = reviews[index];
+
+        document.getElementById('rev-name').value = review.name;
+        document.getElementById('rev-text').value = review.text;
+        document.getElementById('edit-index').value = index;
+        setRating(review.rating);
+
+        // Change UI to Edit Mode
+        document.getElementById('form-title').innerText = "Update Your Review";
+        document.getElementById('submit-btn').innerText = "Update Review";
+        document.getElementById('cancel-btn').style.display = "block";
+        window.scrollTo({ top: document.getElementById('review-form').offsetTop - 50, behavior: 'smooth' });
+    }
+
+    function submitReview() {
+        const name = document.getElementById('rev-name').value;
+        const text = document.getElementById('rev-text').value;
+        const editIndex = parseInt(document.getElementById('edit-index').value);
+
+        if (!name || !text || currentRating === 0) {
+            alert("Please fill all fields.");
+            return;
+        }
+
+        let reviews = JSON.parse(localStorage.getItem('milkReviews')) || [];
+        const reviewData = { name, text, rating: currentRating, date: new Date().toLocaleDateString() };
+
+        if (editIndex > -1) {
+            // Update existing review
+            reviews[editIndex] = reviewData;
+        } else {
+            // Add new review
+            reviews.unshift(reviewData);
+        }
+
+        localStorage.setItem('milkReviews', JSON.stringify(reviews));
+        resetForm();
+        renderReviews();
+    }
+
+    function deleteReview(index) {
+        if (confirm("Delete this review?")) {
+            let reviews = JSON.parse(localStorage.getItem('milkReviews')) || [];
+            reviews.splice(index, 1);
+            localStorage.setItem('milkReviews', JSON.stringify(reviews));
+            renderReviews();
+        }
+    }
+
+    function resetForm() {
+        document.getElementById('rev-name').value = '';
+        document.getElementById('rev-text').value = '';
+        document.getElementById('edit-index').value = "-1";
+        document.getElementById('form-title').innerText = "Write a Review";
+        document.getElementById('submit-btn').innerText = "Post Review";
+        document.getElementById('cancel-btn').style.display = "none";
+        setRating(0);
+    }
+
+    function renderReviews() {
+        const display = document.getElementById('display-reviews');
+        const reviews = JSON.parse(localStorage.getItem('milkReviews')) || [];
+        
+        display.innerHTML = reviews.map((r, i) => `
+            <div style="border-bottom: 1px solid #eee; padding: 20px 0; text-align: left; position: relative;">
+                <div style="color: #ffc107;">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+                <strong>${r.name}</strong> <span style="font-size: 0.8rem; color: #999;">${r.date}</span>
+                <p style="color: #444; margin-top: 5px;">${r.text}</p>
+                <div style="margin-top: 10px;">
+                    <button onclick="editReview(${i})" style="background:none; border:1px solid var(--main-yellow); color:var(--dark-blue); padding:2px 8px; border-radius:4px; cursor:pointer; font-size:0.7rem;">Edit</button>
+                    <button onclick="deleteReview(${i})" style="background:none; border:1px solid #ff4d4d; color:#ff4d4d; padding:2px 8px; border-radius:4px; cursor:pointer; font-size:0.7rem; margin-left:5px;">Delete</button>
+                </div>
+            </div>
+        `).join('') || "<p style='color:#999;'>No reviews yet.</p>";
+    }
+
+    window.onload = renderReviews;
+</script>
+
+
+<footer>
+© 2015 Waseem Enterprises. All rights reserved.
+</footer>
+
+</body>
+</html>
